@@ -1,5 +1,11 @@
 /*External CSS example*/
+/*Inline and Internal CSS overrides this*/
 body {
     background-color: whitesmoke;
   }
-  
+  h1 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
