@@ -11,6 +11,7 @@
     </style>
   </head>
   <body>
+    <!--Date and time-->
     <h1>Music Page</h1>
     <button type="button"
       onclick="document.getElementById('script').innerHTML = Date()">
@@ -25,6 +26,7 @@
     <p style="color:red;">The recording below is my acapella cover of the Carly Rae Jepson's hit single "Call Me Maybe"</p>
     <p><a href=https://musescore.com/user/62959111/scores/11217439>Sheet Music Link</a></p>
     <p><a href=https://soundcloud.com/l-s-406456839/call-me-maybe-acapella>Soundclown Link</a></p>
+    <!--plays a song-->
     <audio controls>
       <source src="call.mp3" type="audio/mpeg">
       Your browser does not support the audio element bozo.
@@ -45,6 +47,15 @@
         <td>Me</td>
       </tr>
     </table>
-  
+    
+    <h2>What is your favourite artist and song?</h2>
+    <form>
+      <label for="aname">Artist name:</label><br>
+      <input type="text" id="aname" name="aname"><br>
+      <label for="sname">Favourite song:</label><br>
+      <input type="text" id="sname" name="sname">
+      <input type="submit" value="Submit">
+    </form>
+
   </body>
 </html>

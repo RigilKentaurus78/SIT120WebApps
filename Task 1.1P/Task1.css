@@ -1,11 +1,11 @@
 /*External CSS example*/
 /*Inline and Internal CSS overrides this*/
 body {
-    background-color: whitesmoke;
-  }
-  h1 {
-    color: black;
-  }
-  p {
-    color: black;
-  }
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #333;
+  background-color: whitesmoke;
+}
+/* Makes header bigger */
+h1 {
+  font-size: 45px;
+}
