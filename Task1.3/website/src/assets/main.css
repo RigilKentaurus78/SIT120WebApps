@@ -1,0 +1,171 @@
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.header {
+    background-color: #333dcc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+.sidebar {
+  background-color: lightgray;
+  padding: 15px;
+}
+
+
+/* So that embeded tracks resizes itself */
+.sidebar iframe {
+  border-radius: 12px;
+  margin-bottom: 20px;
+  width: 100%; 
+}
+
+/* Phones */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+/* PC */  
+@media only screen and (min-width: 768px) {
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: rgb(19, 18, 17);
+  color: azure;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.red {
+  text-decoration: none;
+  color: rgb(189, 0, 57);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(0, 100%, 37%, 0.2);
+  }
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+img{
+  height: 100px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  padding: 2.5%;
+
+}
+
+.col-3 {
+  background-color: rgb(127, 146, 255);
+
+  padding: 2.5%;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.col-s-6 {
+  background-color: rgb(127, 146, 255);
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.center-container {
+  padding: 2.5%;
+  border-radius: 25px;
+}
+
+.link a {
+  font-size: 20px;
+}
+
+
+.summary {
+  text-align: left; /* Set text alignment to left */
+}
+
+
